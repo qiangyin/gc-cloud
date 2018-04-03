@@ -1,6 +1,3 @@
-[submodule "log-server"]
-	path = log-server
-	url = https://github.com/qiangyin/log-server.git
 [submodule "harbor-server"]
 	path = harbor-server
 	url = https://github.com/qiangyin/harbor-server.git
@@ -19,3 +16,6 @@
 [submodule "config"]
 	path = config
 	url = https://github.com/qiangyin/config.git
+[submodule "log-server"]
+	path = log-server
+	url = https://github.com/qiangyin/log-server.git
