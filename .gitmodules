@@ -1,0 +1,21 @@
+[submodule "log-server"]
+	path = log-server
+	url = https://github.com/qiangyin/log-server.git
+[submodule "harbor-server"]
+	path = harbor-server
+	url = https://github.com/qiangyin/harbor-server.git
+[submodule "jenkins-server"]
+	path = jenkins-server
+	url = https://github.com/qiangyin/jenkins-server.git
+[submodule "gitlab-server"]
+	path = gitlab-server
+	url = https://github.com/qiangyin/gitlab-server.git
+[submodule "console"]
+	path = console
+	url = https://github.com/qiangyin/console.git
+[submodule "k8s-api-server"]
+	path = k8s-api-server
+	url = https://github.com/qiangyin/k8s-api-server.git
+[submodule "config"]
+	path = config
+	url = https://github.com/qiangyin/config.git

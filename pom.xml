@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cloudzone</groupId>
+    <artifactId>gc-cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>gitlab-server</module>
+        <module>jenkins-server</module>
+        <module>harbor-server</module>
+        <module>log-server</module>
+        <module>common</module>
+        <module>open-api</module>
+        <module>console</module>
+        <module>k8s-api-server</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <file.encoding>UTF-8</file.encoding>
+        <java.source.version>1.8</java.source.version>
+        <java.target.version>1.8</java.target.version>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <org.springframework.boot.version>1.5.8.RELEASE</org.springframework.boot.version>
+        <org.springframework.cloud.version>1.4.1.RELEASE</org.springframework.cloud.version>
+
+        <repo-id>gome</repo-id>
+        <repo-name>gome public repository</repo-name>
+        <repo-url>http://10.128.11.68:8081/nexus/content/repositories/public/</repo-url>
+        <repo-release-deploy-id>gome</repo-release-deploy-id>
+        <repo-release-deploy-name>gome release repository</repo-release-deploy-name>
+        <repo-release-deploy-url>http://10.128.11.68:8081/nexus/content/repositories/cloudzone_releases/
+        </repo-release-deploy-url>
+
+        <repo-snapshot-deploy-id>gome</repo-snapshot-deploy-id>
+        <repo-snapshot-deploy-name>gome snapshot repository</repo-snapshot-deploy-name>
+        <repo-snapshot-deploy-url>http://10.128.11.68:8081/nexus/content/repositories/cloudzone_snapshots/
+        </repo-snapshot-deploy-url>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.source.version}</source>
+                    <target>${java.target.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${org.springframework.boot.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${org.springframework.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>${org.springframework.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+            <version>${org.springframework.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>${org.springframework.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>1.3.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>${org.springframework.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${org.springframework.boot.version}</version>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR5</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <repositories>
+        <repository>
+            <id>${repo-id}</id>
+            <name>${repo-name}</name>
+            <url>${repo-url}</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>${repo-release-deploy-id}</id>
+            <name>${repo-release-deploy-name}</name>
+            <url>${repo-release-deploy-url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${repo-snapshot-deploy-id}</id>
+            <name>${repo-snapshot-deploy-name}</name>
+            <url>${repo-snapshot-deploy-url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

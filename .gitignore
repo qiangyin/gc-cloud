@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+LOG_HOME_IS_UNDEFINED
+LOG_HOME_IS_UNDEFINED/*.log
+/LOG_HOME_IS_UNDEFINED/
+/LOG_HOME_IS_UNDEFINED/*
+.idea/
+*.iml
+target
+/target
