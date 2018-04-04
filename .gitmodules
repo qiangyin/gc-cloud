@@ -19,3 +19,6 @@
 [submodule "log-server"]
 	path = log-server
 	url = https://github.com/qiangyin/log-server.git
+[submodule "gc-cloud-web"]
+	path = gc-cloud-web
+	url = https://github.com/qiangyin/gc-cloud-web.git
