@@ -8,5 +8,9 @@
 #### 3. git submodule update
 
 #### 4. 进入gc-cloud根目录执行 mvn clean install -Dmaven.test.skip=true
+## 启动步骤
+* 部署eureka-server
+* 部署config-server
+* 部署zipkin-server
 
 
