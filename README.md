@@ -9,8 +9,14 @@
 
 #### 4. 进入gc-cloud根目录执行 mvn clean install -Dmaven.test.skip=true
 ## 启动步骤
-* mvn clean install -Dmaven.test.skip=true 部署eureka-server
-* mvn clean install -Dmaven.test.skip=true 部署config-server
-* mvn clean install -Dmaven.test.skip=true 部署zipkin-server
+* 部署eureka-server
+* 部署config-server
+* 部署zipkin-server
+* 部署gitlab-server
+* 部署harbor-server
+* 部署jenkins-server
+* 部署k8s-api-server
+* 部署console
+* 部署gc-cloud-web
 
 
