@@ -18,6 +18,7 @@
 * 部署k8s-api-server
 * 部署console
   * 导入sql生成数据库
+  * 更改配置
 * 部署gc-cloud-web
 
 
