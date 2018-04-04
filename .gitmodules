@@ -22,3 +22,12 @@
 [submodule "gc-cloud-web"]
 	path = gc-cloud-web
 	url = https://github.com/qiangyin/gc-cloud-web.git
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/qiangyin/config-server.git
+[submodule "eureka-server"]
+	path = eureka-server
+	url = https://github.com/qiangyin/eureka-server.git
+[submodule "zipkin-server"]
+	path = zipkin-server
+	url = https://github.com/qiangyin/zipkin-server.git
