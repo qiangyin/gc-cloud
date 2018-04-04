@@ -1,7 +1,7 @@
 # gc-cloud
 容器云平台
 
-### git clone https://github.com/qiangyin/gc-cloud.git
+#### git clone https://github.com/qiangyin/gc-cloud.git
 
 ### git submodule init
 
