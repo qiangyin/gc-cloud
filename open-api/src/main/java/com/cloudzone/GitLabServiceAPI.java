@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Gitlab Service API
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/22
  */
 @FeignClient(value = "gitlab-server")

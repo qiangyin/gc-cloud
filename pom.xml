@@ -31,17 +31,17 @@
         <org.springframework.boot.version>1.5.8.RELEASE</org.springframework.boot.version>
         <org.springframework.cloud.version>1.4.1.RELEASE</org.springframework.cloud.version>
 
-        <repo-id>gome</repo-id>
-        <repo-name>gome public repository</repo-name>
-        <repo-url>http://10.128.11.68:8081/nexus/content/repositories/public/</repo-url>
-        <repo-release-deploy-id>gome</repo-release-deploy-id>
-        <repo-release-deploy-name>gome release repository</repo-release-deploy-name>
-        <repo-release-deploy-url>http://10.128.11.68:8081/nexus/content/repositories/cloudzone_releases/
+        <repo-id>x</repo-id>
+        <repo-name>x public repository</repo-name>
+        <repo-url>http://192.168.11.68:8081/nexus/content/repositories/public/</repo-url>
+        <repo-release-deploy-id>x</repo-release-deploy-id>
+        <repo-release-deploy-name>x release repository</repo-release-deploy-name>
+        <repo-release-deploy-url>http://192.168.11.68:8081/nexus/content/repositories/cloudzone_releases/
         </repo-release-deploy-url>
 
-        <repo-snapshot-deploy-id>gome</repo-snapshot-deploy-id>
-        <repo-snapshot-deploy-name>gome snapshot repository</repo-snapshot-deploy-name>
-        <repo-snapshot-deploy-url>http://10.128.11.68:8081/nexus/content/repositories/cloudzone_snapshots/
+        <repo-snapshot-deploy-id>x</repo-snapshot-deploy-id>
+        <repo-snapshot-deploy-name>x snapshot repository</repo-snapshot-deploy-name>
+        <repo-snapshot-deploy-url>http://192.168.11.68:8081/nexus/content/repositories/cloudzone_snapshots/
         </repo-snapshot-deploy-url>
     </properties>
 
