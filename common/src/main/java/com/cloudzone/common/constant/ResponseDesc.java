@@ -1,7 +1,7 @@
 package com.cloudzone.common.constant;
 
 /**
- * @author tianyuliang@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/15
  */
 public enum ResponseDesc {

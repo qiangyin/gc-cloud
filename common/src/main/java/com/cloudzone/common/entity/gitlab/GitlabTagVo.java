@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Gitlab Tag
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 @ApiModel(value = "GitlabTagVo", description = "项目标签信息")

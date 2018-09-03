@@ -12,7 +12,7 @@ import static com.cloudzone.common.constant.ResponseCodes.Success;
 /**
  * ResponseResult 返回前端的数据结构
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 public class ResponseResult<T> implements Serializable {

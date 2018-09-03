@@ -3,7 +3,7 @@ package com.cloudzone.common.entity.pod.stomp;
 import java.io.Serializable;
 
 /**
- * @author tianyuliang@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/19
  */
 public class StompPullLog implements Serializable {

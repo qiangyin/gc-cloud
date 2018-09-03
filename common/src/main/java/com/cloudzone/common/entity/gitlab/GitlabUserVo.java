@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * Gitlab User
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 @ApiModel(value = "GitlabUserVo", description = "Gitlab用户信息")

@@ -4,7 +4,7 @@ package com.cloudzone.common.exception;
 /**
  * Http请求异常
  *
- * @author tianyuliang@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/15
  */
 public class HttpException extends RuntimeException {

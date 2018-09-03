@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * Gitlab Project
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 @ApiModel(value = "GitlabProjectVo", description = "获得某个用户分组下的所有项目")

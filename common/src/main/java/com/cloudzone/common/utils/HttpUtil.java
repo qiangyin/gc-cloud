@@ -20,7 +20,7 @@ import java.nio.charset.Charset;
 /**
  * Http工具类
  *
- * @author tianyuliang@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/15
  */
 public class HttpUtil {

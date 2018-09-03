@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Gitlab Session
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 @ApiModel(value = "GitlabSessionVo", description = "Gitlab Session信息")

@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * Gitlab Branch Commit
  *
- * @author rongzhihong@gome.com.cn
+ * @author tongqiangying@gmail.com
  * @since 2018/3/11
  */
 @ApiModel(value = "GitlabBranchCommitVo", description = "Gitlab分支信息")
